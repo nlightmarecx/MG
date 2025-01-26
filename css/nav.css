@@ -1,5 +1,5 @@
 .nav-div {
-    background: right/contain repeat fixed url("../images/galaxy-nav.png");
+    background: top/contain repeat fixed url("../images/galaxy-nav.png");
     margin: 0 0 0 1rem;
     padding: 1.4rem 1.1rem 2.9rem 1.1rem;
     display: flex;
