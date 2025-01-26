@@ -8,7 +8,7 @@ body {
 }
 
 main {
-    background: center/235px no-repeat fixed url("images/logo-nobg.png"), center/contain repeat fixed url("images/galaxy-vertical.png");
+    background: center/235px no-repeat fixed url("images/logo-nobg.png"), center/cover no-repeat fixed url("images/galaxy.png");
     padding-bottom: 1.5rem;
     border-radius: 0 0 0 2.5rem;
     border: solid 2px rgba(0, 255, 255, 0.65);
@@ -157,7 +157,7 @@ main {
     border-radius: 4px;
 }
 
-.product img {
+.product-img {
     height: 150px;
     width: 120px;
     border-radius: 4px;
@@ -166,7 +166,7 @@ main {
 
 .product-name {
     font-size: 14px;
-    color: #333;
+    color: #e3e3e3;
     margin-top: 8px;
     text-decoration: none;
 }
