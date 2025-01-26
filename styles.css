@@ -1,0 +1,207 @@
+/* ----------- GENERAL STYLES ----------- */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #000206;
+}
+
+main {
+    background: center/235px no-repeat fixed url("images/logo-nobg.png"), right/cover no-repeat fixed url("images/galaxy.png");
+    padding-bottom: 1.5rem;
+    border-radius: 0 0 0 2.5rem;
+    border: solid 2px rgba(0, 255, 255, 0.65);
+    box-shadow: 0 0 7.5px 4px royalblue;
+}
+
+.profile-pic{
+    width: 10rem;
+    background: url("images/logo-nobg.png");
+}
+
+/* ----------- PROFILE SECTION ----------- */
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #e3e3e3;
+    margin: 0.6rem 0 1rem 0;
+}
+
+.description {
+    
+    font-size: 16px;
+    color: #777;
+    margin: 10px 0;
+}
+
+/* ----------- SOCIAL LINKS ----------- */
+.social-links {
+    margin: 20px 0 5px 0;
+}
+
+.social-links a {
+    text-decoration: none;
+    padding: 10px 5px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.sm{
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 6px white;
+    transition: transform 0.05s, box-shadow 0.2s;
+}
+
+.sm:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.sm-nobg{
+    border-radius: 5px;
+    box-shadow: 0 0 6px white;
+    transition: box-shadow 0.2s;
+}
+
+.sm-nobg:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* ----------- CONTAINER ----------- */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    user-select: none;
+    border-radius: 0 2.5rem 0 0;
+}
+
+@media screen and (max-width: 768px) {
+    .container{
+        margin: 0 1rem;
+    }
+}
+
+
+/* ----------- PRODUCTS SECTION ----------- */
+.product-list {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    padding: 10px 0;
+    margin-bottom: 0.5rem;
+}
+
+.scrollable-horizontal-list {
+    scroll-behavior: smooth;
+}
+
+.productContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.product {
+    flex: 1 0 auto;
+    width: 120px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.landscape {
+    flex: 1 0 auto;
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.landscape{
+    width: 240px;
+}
+
+
+.landscapeImg {
+    width: 350px;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.product img {
+    height: 150px;
+    width: 120px;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+.product-name {
+    font-size: 14px;
+    color: #333;
+    margin-top: 8px;
+    text-decoration: none;
+}
+
+/* Hidden input for file upload */
+.hidden-input {
+    display: none;
+}
+
+/* Placeholder for upload product */
+.upload-product {
+    position: relative;
+    cursor: pointer;
+    border: 1px dashed #aaa;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s;
+}
+
+.upload-product:hover {
+    background-color: #e6e6e6;
+}
+
+.upload-placeholder {
+    max-width: 100%;
+    height: 150px;
+    width: 120px;
+    border-radius: 4px;
+    object-fit: cover;
+    background: url('./images/placeholders/productimg2.jpg') no-repeat center/cover;
+    filter: grayscale(50%);
+}
+
+.upload-placeholder:before {
+    content: "Click to Upload";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #666;
+    font-size: 14px;
+    text-align: center;
+}
