@@ -21,6 +21,10 @@ main {
 }
 
 /* ----------- PROFILE SECTION ----------- */
+.header-div{
+    margin: 1.4rem 0;
+}
+
 .profile-pic {
     width: 120px;
     height: 120px;
